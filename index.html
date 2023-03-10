@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatiable" content="IE=edge">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0">
+		<style>
+			body{
+				cursor:pointer;
+			}
+			.main .first{
+				display:none;
+			}
+			.list-hover .second{
+				display:none;
+			}
+			.main:hover .first{
+				display:block;
+			}
+			.list-hover:hover .second{
+				display:block;
+			}
+		</style>
+	</head>
+	<body>
+		<li class="main"><a>dromdrown</a>
+			<ul class="first">
+			<li><a>dropdown1</a></li>
+			<li class="list-hover"><a>dropdown2</a>
+				<ul class="second">
+				<li>dropdown1</li>
+				<li>dropdown2</li>
+				<li>dropdown3</li>
+				</ul>
+			</li>	
+		
+			<li>dropdown3</li>
+			<li>dropdown4</li>
+			<li>dropdown5</li>
+			<li>dropdown6</li>
+			</ul>
+		</li>
+	</body>
+</html>
